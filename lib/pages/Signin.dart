@@ -18,7 +18,7 @@ class SigninPage extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: EdgeInsets.only(left: 62.0, right: 62.0, top: 60.0, bottom: 30.0),
+              padding: EdgeInsets.only(top: 200.0, bottom: 10.0),
               child: Center(
                 child: Image.asset(
                   'Assets/Images/chemba.png',
@@ -29,7 +29,7 @@ class SigninPage extends StatelessWidget {
             ),
             SizedBox(height: 20),
             Padding(
-              padding: EdgeInsets.only(left: 50.0, right: 50.0),
+              padding: EdgeInsets.only(left: 65.0, right: 65.0),
               child: TextField(
                 style: TextStyle(
                   color: myColor,
@@ -43,13 +43,13 @@ class SigninPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                     borderSide: BorderSide(color: Colors.black),  
                   ),
-                  contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),  
+                  contentPadding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 20.0),  
                 ),
               ),
             ),
             SizedBox(height: 20),
             Padding(
-              padding: EdgeInsets.only(left: 50.0, right: 50.0),
+              padding: EdgeInsets.only(left: 65.0, right: 65.0),
               child: TextField(
                 obscureText: true,
                 style: TextStyle(
@@ -64,7 +64,7 @@ class SigninPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                     borderSide: BorderSide(color: Colors.black), 
                   ),
-                  contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),  
+                  contentPadding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 20.0),  
                 ),
               ),
             ),
@@ -73,7 +73,7 @@ class SigninPage extends StatelessWidget {
   mainAxisAlignment: MainAxisAlignment.end,
   children: [
     Padding(
-  padding: EdgeInsets.only(right: 50.0), 
+  padding: EdgeInsets.only(right: 60.0), 
   child: GestureDetector(
     onTap: () {
      
@@ -97,32 +97,31 @@ class SigninPage extends StatelessWidget {
             Column(
               children: [
                   GestureDetector(
-                  onTap: () {
-                    
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Landingpage()), 
-                    );
-                  },
-                  child: Container(
-                    width: 318,
-                    height: 80,
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                      color: myColor2,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text(
-                      'Sign In',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                        fontFamily: 'Manrope',
-                        fontWeight: FontWeight.w600,
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Landingpage()),
+                        );
+                      },
+                      child: Container(
+                        width: 312,
+                        height: 85, 
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: myColor2,
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Text(
+                          'Sign Up',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontFamily: 'Manrope',
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
                       ),
                     ),
-                  ),
-                ),
                 
                 SizedBox(height: 20),
                 Text(
