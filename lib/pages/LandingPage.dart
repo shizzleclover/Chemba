@@ -1,3 +1,4 @@
+import 'package:chemba/pages/Profile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'HomePage.dart'; 
@@ -67,15 +68,15 @@ class CustomBottomAppBar extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 30.0),
+              padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   IconButton(
                     icon: SvgPicture.asset(
                       'Assets/Icons/HomeIcon.svg',
-                      width: 20,
-                      height: 20,
+                      width: 35,
+                      height: 35,
                     ),
                     onPressed: () {
                       Navigator.push(
@@ -87,20 +88,32 @@ class CustomBottomAppBar extends StatelessWidget {
                   IconButton(
                     icon: SvgPicture.asset(
                       'Assets/Icons/StackIcon.svg',
+                      width: 35,
+                      height: 35,
                     ),
                     onPressed: () {},
                   ),
                   IconButton(
                     icon: SvgPicture.asset(
                       'Assets/Icons/LeafIcon.svg',
+                      width: 35,
+                      height: 35,
                     ),
                     onPressed: () {},
                   ),
                   IconButton(
                     icon: SvgPicture.asset(
                       'Assets/Icons/LogoIcon.svg',
+                      width: 35,
+                      height: 35,
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+
+                      Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ProfilePage()),
+              );
+                    },
                   ),
                 ],
               ),

@@ -153,13 +153,77 @@ class _FAQPageState extends State<FAQPage> {
                   decoration: BoxDecoration(
                     color: myColor,
                     borderRadius: BorderRadius.circular(10),
-                    border: Border.all(color: myColor3),
+                     
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'What is Chemba?',
+                        'What is Chemba and how does it work?',
+                        style: TextStyle(
+                          fontFamily: 'Manrope',
+                          fontWeight: FontWeight.w300,
+                          fontSize: 16,
+                          color: myColor4,
+                        ),
+                      ),
+                      SvgPicture.asset(
+                        _isDropdownOpen
+                            ? 'Assets/Icons/Arrowfold.svg'
+                            : 'Assets/Icons/Arrowdown.svg',
+                        width: 20,
+                        height: 20,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              if (_isDropdownOpen)
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Chemba Overview',
+                        style: TextStyle(
+                          fontFamily: 'Manrope',
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                          color: myColor4,
+                        ),
+                      ),
+                      SizedBox(height: 10),
+                      Text(
+                        'Chemba is an initiative aimed at promoting recycling and waste management in various communities. Our mission is to educate, engage, and empower individuals to take action towards a cleaner and more sustainable environment.',
+                        style: TextStyle(
+                          fontFamily: 'Manrope',
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14,
+                          color: myColor4,
+                        ),
+                      ),
+                      SizedBox(height: 20),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 20),
+              GestureDetector(
+                onTap: _toggleDropdown,
+                child: Container(
+                  width: double.infinity,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  padding: EdgeInsets.symmetric(vertical: 18, horizontal: 15),
+                  decoration: BoxDecoration(
+                    color: myColor,
+                    borderRadius: BorderRadius.circular(10),
+                    
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'What is Chemba and how does it work?',
                         style: TextStyle(
                           fontFamily: 'Manrope',
                           fontWeight: FontWeight.w600,
@@ -223,71 +287,7 @@ class _FAQPageState extends State<FAQPage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'What is Chemba?',
-                        style: TextStyle(
-                          fontFamily: 'Manrope',
-                          fontWeight: FontWeight.w600,
-                          fontSize: 16,
-                          color: myColor4,
-                        ),
-                      ),
-                      SvgPicture.asset(
-                        _isDropdownOpen
-                            ? 'Assets/Icons/Arrowfold.svg'
-                            : 'Assets/Icons/Arrowdown.svg',
-                        width: 20,
-                        height: 20,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              if (_isDropdownOpen)
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Chemba Overview',
-                        style: TextStyle(
-                          fontFamily: 'Manrope',
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                          color: myColor4,
-                        ),
-                      ),
-                      SizedBox(height: 10),
-                      Text(
-                        'Chemba is an initiative aimed at promoting recycling and waste management in various communities. Our mission is to educate, engage, and empower individuals to take action towards a cleaner and more sustainable environment.',
-                        style: TextStyle(
-                          fontFamily: 'Manrope',
-                          fontWeight: FontWeight.w400,
-                          fontSize: 14,
-                          color: myColor4,
-                        ),
-                      ),
-                      SizedBox(height: 20),
-                    ],
-                  ),
-                ),
-                SizedBox(height: 20),
-              GestureDetector(
-                onTap: _toggleDropdown,
-                child: Container(
-                  width: double.infinity,
-                  margin: EdgeInsets.symmetric(horizontal: 20),
-                  padding: EdgeInsets.symmetric(vertical: 18, horizontal: 15),
-                  decoration: BoxDecoration(
-                    color: myColor,
-                    borderRadius: BorderRadius.circular(10),
-                    
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'What is Chemba?',
+                        'What is Chemba and how does it work?',
                         style: TextStyle(
                           fontFamily: 'Manrope',
                           fontWeight: FontWeight.w600,
@@ -351,7 +351,7 @@ class _FAQPageState extends State<FAQPage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'What is Chemba?',
+                        'What is Chemba and how does it work?',
                         style: TextStyle(
                           fontFamily: 'Manrope',
                           fontWeight: FontWeight.w600,
@@ -415,7 +415,7 @@ class _FAQPageState extends State<FAQPage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'What is Chemba?',
+                        'What is Chemba and how does it work?',
                         style: TextStyle(
                           fontFamily: 'Manrope',
                           fontWeight: FontWeight.w600,
@@ -479,7 +479,7 @@ class _FAQPageState extends State<FAQPage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'What is Chemba?',
+                        'What is Chemba and how does it work?',
                         style: TextStyle(
                           fontFamily: 'Manrope',
                           fontWeight: FontWeight.w600,
@@ -543,7 +543,7 @@ class _FAQPageState extends State<FAQPage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'What is Chemba?',
+                        'What is Chemba and how does it work?',
                         style: TextStyle(
                           fontFamily: 'Manrope',
                           fontWeight: FontWeight.w600,
@@ -602,6 +602,7 @@ class _FAQPageState extends State<FAQPage> {
           topRight: Radius.circular(20.0),
         ),
         child: BottomAppBar(
+          height: 90,
           color: myColor2,
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
@@ -611,8 +612,8 @@ class _FAQPageState extends State<FAQPage> {
                 IconButton(
                   icon: SvgPicture.asset(
                     'Assets/Icons/HomeIcon.svg',
-                    width: 20,
-                    height: 20,
+                    width: 35,
+                    height: 35,
                   ),
                   onPressed: () {
                     Navigator.push(
@@ -624,18 +625,24 @@ class _FAQPageState extends State<FAQPage> {
                 IconButton(
                   icon: SvgPicture.asset(
                     'Assets/Icons/StackIcon.svg',
+                      width: 35,
+                    height: 35,
                   ),
                   onPressed: () {},
                 ),
                 IconButton(
                   icon: SvgPicture.asset(
                     'Assets/Icons/LeafIcon.svg',
+                      width: 35,
+                    height: 35,
                   ),
                   onPressed: () {},
                 ),
                 IconButton(
                   icon: SvgPicture.asset(
                     'Assets/Icons/LogoIcon.svg',
+                      width: 35,
+                    height: 35,
                   ),
                   onPressed: () {},
                 ),

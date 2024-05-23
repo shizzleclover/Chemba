@@ -74,6 +74,7 @@ flutter:
 
     - Assets/Icons/FloatingButtonIcon.svg
     - Assets/Icons/HomeIcon.svg
+    - Assets/Icons/Location.svg
     - Assets/Icons/LeafIcon.svg
     - Assets/Icons/LogoIcon.svg
     - Assets/Icons/StackIcon.svg

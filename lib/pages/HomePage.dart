@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'LandingPage.dart';
 import 'FAQ.dart';
 import 'Educate.dart';
+import 'Profile.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Homepage extends StatefulWidget {
@@ -27,7 +28,6 @@ class _HomepageState extends State<Homepage> {
     });
     switch (index) {
       case 0:
-        // Stay on the current Events page
         break;
       case 1:
         Navigator.push(
@@ -212,7 +212,7 @@ class _HomepageState extends State<Homepage> {
           height: 70.0, 
           child: FloatingActionButton(
             onPressed: () {
-              // Define what happens when the FAB is pressed
+              
             },
             backgroundColor: myColor2,
             child: SvgPicture.asset(
@@ -224,54 +224,68 @@ class _HomepageState extends State<Homepage> {
           ),
         ),
       ),
-      bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(20.0),
-          topRight: Radius.circular(20.0),
-        ),
-        child: BottomAppBar(
-          color: myColor2,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                IconButton(
-                  icon: SvgPicture.asset(
-                    'Assets/Icons/HomeIcon.svg',
-                    width: 20,
-                    height: 20,
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Homepage()),
-                    );
-                  },
-                ),
-                IconButton(
-                  icon: SvgPicture.asset(
-                    'Assets/Icons/StackIcon.svg',
-                  ),
-                  onPressed: () {},
-                ),
-                IconButton(
-                  icon: SvgPicture.asset(
-                    'Assets/Icons/LeafIcon.svg',
-                  ),
-                  onPressed: () {},
-                ),
-                IconButton(
-                  icon: SvgPicture.asset(
-                    'Assets/Icons/LogoIcon.svg',
-                  ),
-                  onPressed: () {},
-                ),
-              ],
+     bottomNavigationBar: ClipRRect(
+  borderRadius: BorderRadius.only(
+    topLeft: Radius.circular(20.0),
+    topRight: Radius.circular(20.0),
+  ),
+  child: BottomAppBar(
+    height: 90,
+    color: myColor2,
+    child: Padding(
+      padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+      child: Row(
+        
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          IconButton(
+            icon: SvgPicture.asset(
+              'Assets/Icons/HomeIcon.svg',
+             width: 35,
+                      height: 35,
             ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Homepage()),
+              );
+            },
           ),
-        ),
+          IconButton(
+            icon: SvgPicture.asset(
+              'Assets/Icons/StackIcon.svg',
+              width: 35,
+                      height: 35,
+            ),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: SvgPicture.asset(
+              'Assets/Icons/LeafIcon.svg',
+              width: 35,
+                      height: 35,
+            ),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: SvgPicture.asset(
+              'Assets/Icons/LogoIcon.svg',
+              width: 35,
+                      height: 35,
+            ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ProfilePage()),
+              );
+            },
+          ),
+        ],
       ),
+    ),
+  ),
+),
+
     );
   }
 }
