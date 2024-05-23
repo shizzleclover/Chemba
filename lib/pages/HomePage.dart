@@ -1,3 +1,4 @@
+import 'package:chemba/pages/Forecast.dart';
 import 'package:flutter/material.dart';
 import 'LandingPage.dart';
 import 'FAQ.dart';
@@ -257,7 +258,12 @@ class _HomepageState extends State<Homepage> {
               width: 35,
                       height: 35,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Landingpage()),
+                    );
+            },
           ),
           IconButton(
             icon: SvgPicture.asset(
@@ -265,7 +271,12 @@ class _HomepageState extends State<Homepage> {
               width: 35,
                       height: 35,
             ),
-            onPressed: () {},
+            onPressed: () {
+               Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ForecastPage()),
+                    );
+            },
           ),
           IconButton(
             icon: SvgPicture.asset(

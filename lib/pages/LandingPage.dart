@@ -1,3 +1,4 @@
+import 'package:chemba/pages/Forecast.dart';
 import 'package:chemba/pages/Profile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -91,7 +92,12 @@ class CustomBottomAppBar extends StatelessWidget {
                       width: 35,
                       height: 35,
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Landingpage()),
+                    );
+                    },
                   ),
                   IconButton(
                     icon: SvgPicture.asset(
@@ -99,7 +105,12 @@ class CustomBottomAppBar extends StatelessWidget {
                       width: 35,
                       height: 35,
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ForecastPage()),
+                    );
+                    },
                   ),
                   IconButton(
                     icon: SvgPicture.asset(

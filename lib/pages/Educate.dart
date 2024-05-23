@@ -1,4 +1,5 @@
 import 'package:chemba/pages/FAQ.dart';
+import 'package:chemba/pages/Forecast.dart';
 import 'package:chemba/pages/Profile.dart';
 import 'package:flutter/material.dart';
 import 'HomePage.dart';
@@ -170,7 +171,7 @@ class _EducatePageState extends State<EducatePage> {
               Container(
                 width: double.infinity,
                 margin: EdgeInsets.symmetric(horizontal: 30),
-                padding: EdgeInsets.symmetric(vertical: 40, horizontal: 40), // Inner text padding
+                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 30), // Inner text padding
                 decoration: BoxDecoration(
                   color: myColor,
                   borderRadius: BorderRadius.circular(10),
@@ -203,7 +204,7 @@ class _EducatePageState extends State<EducatePage> {
                       style: TextStyle(
                         fontFamily: 'Manrope',
                         fontWeight: FontWeight.w600,
-                        fontSize: 16,
+                        fontSize: 19,
                         color: myColor4,
                       ),
                     ),
@@ -306,7 +307,9 @@ class _EducatePageState extends State<EducatePage> {
                     width: 35,
                     height: 35,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    // Add appropriate navigation or functionality here
+                  },
                 ),
                 IconButton(
                   icon: SvgPicture.asset(
@@ -314,7 +317,12 @@ class _EducatePageState extends State<EducatePage> {
                     width: 35,
                     height: 35,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ForecastPage()),
+                    );
+                  },
                 ),
                 IconButton(
                   icon: SvgPicture.asset(
