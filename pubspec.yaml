@@ -64,10 +64,12 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - Assets/Images/chemba.png
+    - Assets/Images/Map.png
     - Assets/Images/garbage.jpg
     - Assets/Images/garbage2.jpg
     - Assets/Images/garbage3.jpg
-    - Assets/Images/Map.jpg
+    - Assets/Images/Rectangle.jpg
+
 
 
     - Assets/Icons/FloatingButtonIcon.svg
@@ -75,7 +77,14 @@ flutter:
     - Assets/Icons/LeafIcon.svg
     - Assets/Icons/LogoIcon.svg
     - Assets/Icons/StackIcon.svg
-
+    - Assets/Icons/Arrowdown.svg
+    - Assets/Icons/cross.svg
+    - Assets/Icons/Facebook.svg
+    - Assets/Icons/Linkedin.svg
+    - Assets/Icons/Twitter.svg
+    - Assets/Icons/Youtube.svg
+    - Assets/Icons/cross.svg
+    - Assets/Icons/Arrowfold.svg
 
   #   - images/a_dot_ham.jpeg
 

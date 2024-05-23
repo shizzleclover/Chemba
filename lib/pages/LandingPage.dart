@@ -14,7 +14,7 @@ class Landingpage extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         child: Image.asset(
-          'Assets/Images/Map.jpg',
+          'Assets/Images/Map.png',
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
           fit: BoxFit.cover,
@@ -46,7 +46,7 @@ class CustomBottomAppBar extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Container(
-              height: 250.0, 
+              height: 200.0, 
               color: myColor2,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
