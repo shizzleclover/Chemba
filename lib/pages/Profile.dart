@@ -99,7 +99,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           fontFamily: 'Manrope',
                           fontWeight: FontWeight.bold,
                           color: myColor2,
-                          fontSize: 40,
+                          fontSize: 30,
                         ),
                       ),
                     ],

@@ -85,12 +85,17 @@ flutter:
     - Assets/Icons/StackIcon.svg
     - Assets/Icons/Arrowdown.svg
     - Assets/Icons/cross.svg
+    - Assets/Icons/Email.svg
+    - Assets/Icons/Chat.svg
     - Assets/Icons/Cloud.svg
     - Assets/Icons/CloudBox.svg
     - Assets/Icons/Facebook.svg
     - Assets/Icons/Linkedin.svg
     - Assets/Icons/Twitter.svg
     - Assets/Icons/Youtube.svg
+    - Assets/Icons/Devices.svg
+    - Assets/Icons/PrivacyPolicy.svg
+    - Assets/Icons/Terms.svg
     - Assets/Icons/cross.svg
     - Assets/Icons/Arrowfold.svg
 
