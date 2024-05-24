@@ -143,36 +143,221 @@ class _ForecastPage extends State<ForecastPage> {
                   ),
                 ],
               ),
-
               const SizedBox(height: 40),
-            Padding(
-              padding: EdgeInsets.only(left: 30.0, right: 30.0),
-              child: TextField(
-                
-                style: TextStyle(
-                  color: myColor,
-                ),
-                decoration: InputDecoration(
-                  filled: true,
-                  fillColor: myColor,
-                  hintText: 'Type Your Location',
-                  hintStyle: TextStyle(fontWeight: FontWeight.w800, color: myColor4, fontSize: 20, fontFamily: 'Manrope'),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide(color: Colors.black),  
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 30.0),
+                child: TextField(
+                  style: TextStyle(
+                    color: myColor4,
                   ),
-                  contentPadding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 50.0),  
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: myColor,
+                    hintText: 'Type Your Location',
+                    hintStyle: TextStyle(
+                      fontWeight: FontWeight.w800,
+                      color: myColor4,
+                      fontSize: 20,
+                      fontFamily: 'Manrope',
+                    ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    contentPadding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 20.0),
+                    suffixIcon: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: SvgPicture.asset(
+                        'Assets/Icons/Location.svg', // Your SVG file here
+                        width: 24,
+                        height: 24,
+                        color: myColor4, // Adjust the color if needed
+                      ),
+                    ),
+                  ),
                 ),
               ),
-            ),
+              const SizedBox(height: 20),
+              Column(
+                children: [
+                  Text(
+                    'Accra',
+                    style: TextStyle(
+                      fontSize: 38,
+                      fontFamily: 'Manrope',
+                      fontWeight: FontWeight.w800,
+                      color: myColor4,
+                    ),
+                  ),
+                  const SizedBox(height: 1),
+                  Text(
+                    '19°C',
+                    style: TextStyle(
+                      fontFamily: 'Manrope',
+                      fontSize: 30,
+                      fontWeight: FontWeight.w300,
+                      color: myColor4,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    'Sunny',
+                    style: TextStyle(
+                      fontFamily: 'Manrope',
+                      fontSize: 27,
+                      fontWeight: FontWeight.w300,
+                      color: myColor4,
+                    ),
+                  ),
+                  const SizedBox(height: 40), // Added SizedBox for spacing
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 30.0), // Adjust padding as needed
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        'Weather Forecast',
+                        style: TextStyle(
+                          fontFamily: 'Manrope',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: myColor4,
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 20), 
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 1.0),
+                    child: Container(
+                      padding: EdgeInsets.all(5.0),
+                      decoration: BoxDecoration(
+                        color: myColor,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Row(
+                        children: [
+                          Container(
+                            width: 60,
+                            height: 50,
+                            decoration: BoxDecoration(
+                              color: myColor2,
+                              borderRadius: BorderRadius.circular(5),
+                            ),
+                            child: SvgPicture.asset(
+                              'Assets/Icons/Cloud.svg', // Your SVG icon
+                              color: Colors.white,
+                              width: 10,
+                              height: 10,
+                            ),
+                          ),
+                          const SizedBox(width: 15),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Saturday, 6 May',
+                                  style: TextStyle(
+                                    fontFamily: 'Manrope',
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                    color: myColor4,
+                                  ),
+                                ),
+                                Text(
+                                  '19',
+                                  style: TextStyle(
+                                    fontFamily: 'Manrope',
+                                    fontSize: 16,
+                                    color: myColor4,
+                                  ),
+                                ),
+                                Text(
+                                  'Sunny',
+                                  style: TextStyle(
+                                    fontFamily: 'Manrope',
+                                    fontSize: 16,
+                                    color: myColor4,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                   const SizedBox(height: 15),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+                    child: Container(
+                      padding: EdgeInsets.all(5.0),
+                      decoration: BoxDecoration(
+                        color: myColor,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Row(
+                        children: [
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                              color: myColor2,
+                              borderRadius: BorderRadius.circular(5),
+                            ),
+                            child: SvgPicture.asset(
+                              'Assets/Icons/Cloud.svg', // Your SVG icon
+                              color: Colors.white,
+                              width: 24,
+                              height: 24,
+                            ),
+                          ),
+                          const SizedBox(width: 10),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Saturday, 6 May',
+                                  style: TextStyle(
+                                    fontFamily: 'Manrope',
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                    color: myColor4,
+                                  ),
+                                ),
+                                Text(
+                                  '19',
+                                  style: TextStyle(
+                                    fontFamily: 'Manrope',
+                                    fontSize: 16,
+                                    color: myColor4,
+                                  ),
+                                ),
+                                Text(
+                                  'Sunny',
+                                  style: TextStyle(
+                                    fontFamily: 'Manrope',
+                                    fontSize: 16,
+                                    color: myColor4,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
       ),
       bottomNavigationBar: ClipRRect(
         borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(20.0),
-          topRight: Radius.circular(20.0),
+          topLeft: Radius.circular(15.0),
+          topRight: Radius.circular(15.0),
         ),
         child: BottomAppBar(
           height: 90,
