@@ -206,24 +206,18 @@ class _HomepageState extends State<Homepage> {
           ),
         ),
       ),
-      floatingActionButton: Padding(
-        padding: const EdgeInsets.only(top: 100.0), 
-        child: SizedBox(
-          width: 70.0, 
-          height: 70.0, 
-          child: FloatingActionButton(
-            onPressed: () {
-              
-            },
-            backgroundColor: myColor2,
-            child: SvgPicture.asset(
-              'Assets/Icons/cross.svg', 
-              width: 35,
-              height: 35,
-              color: Colors.white, 
-            ),
-          ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          
+        },
+        backgroundColor: myColor2,
+        child: SvgPicture.asset(
+          'Assets/Icons/cross.svg', 
+          width: 35,
+          height: 35,
+          color: Colors.white, 
         ),
+        shape: CircleBorder(), 
       ),
      bottomNavigationBar: ClipRRect(
   borderRadius: BorderRadius.only(

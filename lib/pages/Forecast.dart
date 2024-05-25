@@ -167,10 +167,10 @@ class _ForecastPage extends State<ForecastPage> {
                     suffixIcon: Padding(
                       padding: const EdgeInsets.all(12.0),
                       child: SvgPicture.asset(
-                        'Assets/Icons/Location.svg', // Your SVG file here
+                        'Assets/Icons/Location.svg', 
                         width: 24,
                         height: 24,
-                        color: myColor4, // Adjust the color if needed
+                        color: myColor4, 
                       ),
                     ),
                   ),
@@ -208,9 +208,9 @@ class _ForecastPage extends State<ForecastPage> {
                       color: myColor4,
                     ),
                   ),
-                  const SizedBox(height: 40), // Added SizedBox for spacing
+                  const SizedBox(height: 40), 
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 30.0), // Adjust padding as needed
+                    padding: EdgeInsets.symmetric(horizontal: 30.0),
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
@@ -243,7 +243,7 @@ class _ForecastPage extends State<ForecastPage> {
                               borderRadius: BorderRadius.circular(5),
                             ),
                             child: SvgPicture.asset(
-                              'Assets/Icons/Cloud.svg', // Your SVG icon
+                              'Assets/Icons/Cloud.svg', 
                               color: Colors.white,
                               width: 10,
                               height: 10,
@@ -305,7 +305,7 @@ class _ForecastPage extends State<ForecastPage> {
                               borderRadius: BorderRadius.circular(5),
                             ),
                             child: SvgPicture.asset(
-                              'Assets/Icons/Cloud.svg', // Your SVG icon
+                              'Assets/Icons/Cloud.svg',
                               color: Colors.white,
                               width: 24,
                               height: 24,

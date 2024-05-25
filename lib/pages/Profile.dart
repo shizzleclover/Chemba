@@ -41,7 +41,25 @@ class _ProfilePageState extends State<ProfilePage> {
                         'Assets/Images/chemba.png',
                         height: 60,
                       ),
-                      SizedBox(height: 40),
+                     
+                    ],
+                  ),
+                SizedBox(width: 20),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Profile',
+                        style: TextStyle(
+                          fontFamily: 'Manrope',
+                          fontWeight: FontWeight.bold,
+                          color: myColor2,
+                          fontSize: 30,
+                        ),
+                      ),
+                    ],
+                  ),
+                   SizedBox(height: 40),
                       Row(
                         children: [
                           Container(
@@ -87,23 +105,6 @@ class _ProfilePageState extends State<ProfilePage> {
                           ),
                         ],
                       ),
-                    ],
-                  ),
-                  SizedBox(width: 20),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Profile',
-                        style: TextStyle(
-                          fontFamily: 'Manrope',
-                          fontWeight: FontWeight.bold,
-                          color: myColor2,
-                          fontSize: 30,
-                        ),
-                      ),
-                    ],
-                  ),
                 ],
               ),
             ),
@@ -237,7 +238,7 @@ class _ProfilePageState extends State<ProfilePage> {
                        );
                    },
                   ),
-                          SizedBox(width: 10),
+                          
                           Text(
                             'Security & Privacy ',
                             style: TextStyle(

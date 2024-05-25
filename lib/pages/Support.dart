@@ -1,7 +1,7 @@
 import 'package:chemba/pages/Profile.dart';
 import 'package:flutter/material.dart';
-import 'HomePage.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'HomePage.dart';
 import 'package:chemba/pages/FAQ.dart';
 import 'package:chemba/pages/Forecast.dart';
 import 'package:chemba/pages/LandingPage.dart'; 
@@ -10,23 +10,20 @@ import 'package:chemba/pages/Signin.dart';
 import 'package:chemba/pages/Support.dart';
 
 class SupportPage extends StatefulWidget {
-  const SupportPage({super.key});
+  const SupportPage({Key? key}) : super(key: key);
 
   @override
   State<SupportPage> createState() => _SupportPageState();
 }
 
 class _SupportPageState extends State<SupportPage> {
-    Color myColor = Color.fromRGBO(210, 217, 209, 1);
+  Color myColor = Color.fromRGBO(210, 217, 209, 1);
   Color myColor2 = Color.fromRGBO(82, 130, 101, 1);
-  Color myColor3 = Color.fromRGBO(0, 0, 0, 0.65);
-  Color myColor4 = Color.fromRGBO(0, 0, 0, 1);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-
-       backgroundColor: Colors.white,
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -45,12 +42,12 @@ class _SupportPageState extends State<SupportPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Security & Privacy',
+                        'Help & Support',
                         style: TextStyle(
                           fontFamily: 'Manrope',
                           fontWeight: FontWeight.bold,
                           color: myColor2,
-                          fontSize: 24,
+                          fontSize: 27,
                         ),
                       ),
                     ],
@@ -58,7 +55,213 @@ class _SupportPageState extends State<SupportPage> {
                 ],
               ),
             ),
-            // Add your content here
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 30.0),
+              child: Text(
+                'We’re always here to answer any of your questions, and support of any kind.',
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                  fontFamily: 'Manrope',
+                  fontWeight: FontWeight.w400,
+                  fontSize: 18,
+                ),
+              ),
+            ),
+
+            SizedBox(height: 70),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              child: Container(
+                padding: EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  color: myColor,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => SigninPage()),
+                        );
+                      },
+                      child: Row(
+                        children: [
+                          IconButton(
+                            icon: SvgPicture.asset(
+                              'Assets/Icons/Chat.svg',
+                              width: 30,
+                              height: 30,
+                            ), 
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => SigninPage()),
+                              );
+                            },
+                          ),
+                          SizedBox(width: 10),
+                          Text(
+                            'Chat With Our Customer Support ',
+                            style: TextStyle(
+                              fontFamily: 'Manrope',
+                              fontWeight: FontWeight.w300,
+                              color: Colors.black,
+                              fontSize: 18,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
+            SizedBox(height: 40),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              child: Container(
+                padding: EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  color: myColor,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => SigninPage()),
+                        );
+                      },
+                      child: Row(
+                        children: [
+                          IconButton(
+                            icon: SvgPicture.asset(
+                              'Assets/Icons/Email.svg',
+                              width: 30,
+                              height: 30,
+                            ), 
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => SigninPage()),
+                              );
+                            },
+                          ),
+                          SizedBox(width: 10),
+                          Text(
+                            'Send Us An E-mail ',
+                            style: TextStyle(
+                              fontFamily: 'Manrope',
+                              fontWeight: FontWeight.w200,
+                              color: Colors.black,
+                              fontSize: 20,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
+            SizedBox(height: 20),
+            Center(
+              child: Padding(
+                padding: const EdgeInsets.only(bottom: 20.0),
+                child: Text(
+                  'Connect with us on:',
+                  style: TextStyle(
+                    fontFamily: 'Manrope',
+                    fontWeight: FontWeight.bold,
+                    color: myColor2,
+                    fontSize: 20,
+                  ),
+                ),
+              ),
+            ),
+
+            GridView.count(
+              shrinkWrap: true,
+              crossAxisCount: 3,
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              children: [
+               
+                IconButton(
+                  icon: SvgPicture.asset(
+                    'Assets/Icons/Linkedin.svg',
+                    width: 35,
+                    height: 35,
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Landingpage()),
+                    );
+                  },
+                ),
+                IconButton(
+                  icon: SvgPicture.asset(
+                    'Assets/Icons/Twitter.svg',
+                    width: 35,
+                    height: 35,
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ForecastPage()),
+                    );
+                  },
+                ),
+                IconButton(
+                  icon: SvgPicture.asset(
+                    'Assets/Icons/Youtube.svg',
+                    width: 35,
+                    height: 35,
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ProfilePage()),
+                    );
+                  },
+                ),
+                IconButton(
+                  icon: SvgPicture.asset(
+                    'Assets/Icons/Facebook.svg',
+                    width: 35,
+                    height: 35,
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ProfilePage()),
+                    );
+                  },
+                ),
+                IconButton(
+                  icon: SvgPicture.asset(
+                    'Assets/Icons/Facebook.svg',
+                    width: 35,
+                    height: 35,
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ProfilePage()),
+                    );
+                  },
+                ),
+                
+              ],
+            ),
           ],
         ),
       ),
@@ -132,8 +335,6 @@ class _SupportPageState extends State<SupportPage> {
           ),
         ),
       ),
-
-
     );
   }
 }

@@ -38,6 +38,7 @@ class _SecurityPageState extends State<SecurityPage> {
                   Image.asset(
                     'Assets/Images/chemba.png',
                     height: 60,
+                
                   ),
                   SizedBox(width: 20),
                   Column(
@@ -47,7 +48,7 @@ class _SecurityPageState extends State<SecurityPage> {
                         'Security & Privacy',
                         style: TextStyle(
                           fontFamily: 'Manrope',
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.w500,
                           color: myColor2,
                           fontSize: 24,
                         ),
@@ -62,7 +63,7 @@ class _SecurityPageState extends State<SecurityPage> {
             Padding(
               padding: EdgeInsets.only(left: 20, right: 20),
               child: Container(
-                padding: EdgeInsets.all(25),
+                padding: EdgeInsets.all(20),
                 decoration: BoxDecoration(
                   color: myColor,
                   borderRadius: BorderRadius.circular(10),
@@ -96,9 +97,9 @@ class _SecurityPageState extends State<SecurityPage> {
                             'Privacy Policy ',
                             style: TextStyle(
                               fontFamily: 'Manrope',
-                              fontWeight: FontWeight.w600,
+                              fontWeight: FontWeight.w300,
                               color: Colors.black,
-                              fontSize: 20,
+                              fontSize: 25,
                             ),
                           ),
                         ],
@@ -147,9 +148,9 @@ class _SecurityPageState extends State<SecurityPage> {
                             'Terms Of Service ',
                             style: TextStyle(
                               fontFamily: 'Manrope',
-                              fontWeight: FontWeight.w600,
+                              fontWeight: FontWeight.w300,
                               color: Colors.black,
-                              fontSize: 20,
+                              fontSize: 25,
                             ),
                           ),
                         ],
@@ -199,9 +200,9 @@ class _SecurityPageState extends State<SecurityPage> {
                             'Devices',
                             style: TextStyle(
                               fontFamily: 'Manrope',
-                              fontWeight: FontWeight.w600,
+                              fontWeight: FontWeight.w300,
                               color: Colors.black,
-                              fontSize: 20,
+                              fontSize: 25,
                             ),
                           ),
                         ],

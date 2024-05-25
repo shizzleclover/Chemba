@@ -39,9 +39,6 @@ class _EducatePageState extends State<EducatePage> {
           MaterialPageRoute(builder: (context) => FAQPage()),
         );
         break;
-      case 2:
-        // Already on EducatePage, no navigation needed
-        break;
     }
   }
 
@@ -142,7 +139,7 @@ class _EducatePageState extends State<EducatePage> {
               Container(
                 width: double.infinity,
                 margin: EdgeInsets.symmetric(horizontal: 30),
-                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40), // Inner text padding
+                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40), 
                 decoration: BoxDecoration(
                   color: myColor,
                   borderRadius: BorderRadius.circular(10),
@@ -171,7 +168,7 @@ class _EducatePageState extends State<EducatePage> {
               Container(
                 width: double.infinity,
                 margin: EdgeInsets.symmetric(horizontal: 30),
-                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 30), // Inner text padding
+                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 30), 
                 decoration: BoxDecoration(
                   color: myColor,
                   borderRadius: BorderRadius.circular(10),
@@ -187,7 +184,7 @@ class _EducatePageState extends State<EducatePage> {
                           style: TextStyle(
                             fontFamily: 'Manrope',
                             fontWeight: FontWeight.w700,
-                            fontSize: 24, // Edit size here
+                            fontSize: 24, 
                             color: myColor4,
                           ),
                         ),
@@ -215,7 +212,7 @@ class _EducatePageState extends State<EducatePage> {
               Container(
                 width: double.infinity,
                 margin: EdgeInsets.symmetric(horizontal: 30),
-                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20), // Adjust horizontal padding to fix overflow
+                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20), 
                 decoration: BoxDecoration(
                   color: myColor,
                   borderRadius: BorderRadius.circular(10),
@@ -246,7 +243,7 @@ class _EducatePageState extends State<EducatePage> {
               Container(
                 width: double.infinity,
                 margin: EdgeInsets.symmetric(horizontal: 30),
-                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40), // Inner text padding
+                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40), 
                 decoration: BoxDecoration(
                   color: myColor,
                   borderRadius: BorderRadius.circular(10),
@@ -308,7 +305,7 @@ class _EducatePageState extends State<EducatePage> {
                     height: 35,
                   ),
                   onPressed: () {
-                    // Add appropriate navigation or functionality here
+                    
                   },
                 ),
                 IconButton(
