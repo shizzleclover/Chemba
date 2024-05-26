@@ -309,6 +309,7 @@ class _EducatePageState extends State<EducatePage> {
                   },
                 ),
                 IconButton(
+
                   icon: SvgPicture.asset(
                     'Assets/Icons/LeafIcon.svg',
                     width: 35,
